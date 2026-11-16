@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Pairwake</title>
+  <meta name="description" content="Privacy policy for Pairwake, an Android app by Nameless Interactive.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1f2328;
+      --muted: #59636e;
+      --bg: #ffffff;
+      --border: #d1d9e0;
+      --code-bg: #f6f8fa;
+      --link: #0969da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e6edf3;
+        --muted: #9198a1;
+        --bg: #0d1117;
+        --border: #3d444d;
+        --code-bg: #151b23;
+        --link: #4493f8;
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1rem; }
+    h2 { font-size: 1.35rem; margin: 2.25rem 0 0.75rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
+    a { color: var(--link); }
+    code {
+      background: var(--code-bg);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .meta { color: var(--muted); margin: 0 0 1.5rem; }
+    .meta div { margin: 0.15rem 0; }
+    .meta strong { color: var(--fg); }
+    ul { padding-left: 1.4rem; }
+    li { margin: 0.4rem 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+    th { background: var(--code-bg); }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Pairwake</h1>
+
+  <div class="meta">
+    <div><strong>Developer:</strong> Nameless Interactive</div>
+    <div><strong>App:</strong> Pairwake (<code>com.namelessinteractive.pairwake</code>)</div>
+    <div><strong>Effective date:</strong> 10 November 2026</div>
+    <div><strong>Last updated:</strong> 14 November 2026</div>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Nameless Interactive (“we”, “us”) publishes the Android app <strong>Pairwake</strong> (the “App”). Contact: <a href="mailto:namelessinteractive@gmail.com"><strong>namelessinteractive@gmail.com</strong></a>.</p>
+
+  <h2>Summary</h2>
+  <p>Pairwake is designed to be <strong>offline and private-by-design</strong>. Core features (pairing, Bluetooth Low Energy advertising/scanning, and the locate alarm) run <strong>on your devices</strong>. We do <strong>not</strong> operate a backend for this App, and the App does <strong>not</strong> collect, upload, or share personal data with Nameless Interactive.</p>
+
+  <h2>What the App does locally</h2>
+  <ul>
+    <li><strong>Pairing secret.</strong> When you pair two phones, a random secret is stored <strong>only on those devices</strong> (encrypted at rest by the platform storage used by the App). It is not sent to us.</li>
+    <li><strong>Bluetooth.</strong> The App uses Bluetooth Low Energy to advertise, scan, and exchange a short challenge–response between <em>your</em> paired phones. That traffic stays between the devices; we do not receive it.</li>
+    <li><strong>Camera.</strong> Camera access is used only on-device to (a) scan a pairing QR code and/or (b) blink the flashlight during an alarm. Images are not uploaded to us.</li>
+    <li><strong>Notifications and alarm.</strong> Notifications, vibration, sound, and the stop screen run locally so you can find a misplaced phone.</li>
+  </ul>
+
+  <h2>Data we collect</h2>
+  <p><strong>Nameless Interactive collects no personal data through the App.</strong> We do not run analytics, crash reporting, advertising, or account systems in the App.</p>
+  <p>Data that remains only on your device (for example the pairing secret or purchase entitlement flags stored locally) is <strong>not</strong> “collected” by us in the sense of being transmitted off the device to Nameless Interactive.</p>
+
+  <h2>Google Play Billing</h2>
+  <p>If you buy the one-time unlock (<code>premium_unlock</code>), <strong>payment is processed by Google</strong> through <strong>Google Play’s billing system</strong>. Card numbers and other payment credentials are collected by Google under Google’s terms and privacy policy; the App does not receive your full payment card details.</p>
+  <p>Google may show purchase information to you in Play. Nameless Interactive may see <strong>aggregated sales / order reports in Play Console</strong> (for example product, country, and amounts) as a Play developer. That reporting is governed by Google’s developer agreements and privacy disclosures, not by a separate Nameless Interactive server.</p>
+  <p>We do <strong>not</strong> operate our own server that stores purchase tokens or account history, and we do not keep a separate purchase database about you.</p>
+  <p>See Google’s policies and Play Help for how Play Billing handles payment data: <a href="https://support.google.com/googleplay/android-developer/answer/10787469">Provide information for Google Play’s Data safety section</a>.</p>
+
+  <h2>Permissions (why the App asks)</h2>
+  <p>The App may request runtime permissions only for features you use, including:</p>
+  <table>
+    <thead>
+      <tr><th>Permission / capability</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nearby devices / Bluetooth (scan, advertise, connect)</td><td>Find and trigger a paired phone over BLE</td></tr>
+      <tr><td>Camera</td><td>Scan pairing QR codes; blink flashlight during alarm</td></tr>
+      <tr><td>Notifications</td><td>Quiet “findable” status; ringing / stop actions during an alarm</td></tr>
+      <tr><td>Full-screen intent (special access, if granted)</td><td>Optional full-screen STOP screen over the lock screen while ringing</td></tr>
+      <tr><td>Boot completed</td><td>Restore “findable” mode after reboot if you left it on</td></tr>
+    </tbody>
+  </table>
+  <p>You can deny optional permissions; related features will not work until granted.</p>
+
+  <h2>Children’s privacy</h2>
+  <p>The App is intended for a <strong>general audience</strong> and is <strong>not directed at children under 13</strong>. We do not knowingly collect personal information from children.</p>
+
+  <h2>Third parties</h2>
+  <p>Aside from the Android / Google Play platform itself (including Play Billing when you purchase), the App does <strong>not</strong> embed third-party ads or analytics SDKs that would send your data to other companies.</p>
+
+  <h2>International users</h2>
+  <p>Nameless Interactive is based in South Africa. Because the App does not send personal data to our servers, we do not transfer App user personal data internationally ourselves. Platform processing by Google may occur under Google’s terms wherever you use Play.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy when the App or our practices change. The “Last updated” date above will change when we publish a revision. Material changes will be reflected at this page, which is linked from the Play Store listing.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:namelessinteractive@gmail.com"><strong>namelessinteractive@gmail.com</strong></a><br>
+  Nameless Interactive, South Africa.</p>
+
+  <footer>© 2026 Nameless Interactive</footer>
+</main>
+</body>
+</html>
